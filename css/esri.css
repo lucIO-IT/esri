@@ -1,0 +1,60 @@
+.infoBox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 525px;
+    float: left;
+    padding: 60px 50px;
+    /*
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    */
+}
+
+.appJumbotron {
+    background: rgb(250,250,250);
+    width: 100%;
+    max-width: 380px;
+    /*
+    box-shadow: 0 8px 15px #777, 0 8px 6px #777;
+    -webkit-box-shadow: 0 8px 15px #777, 0 8px 6px #777;
+    -moz-box-shadow: 0 8px 15px #777, 0 8px 6px #777;
+    */
+}
+
+.appJumbotron .title, .appJumbotron .paragraph {
+    font-size: 48px;
+    margin: 0;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.appJumbotron .paragraph {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.actionBtn {
+    background: #321911;
+    text-decoration: none;
+    outline: none;
+    float: right;
+    cursor: pointer;
+    border: 0;
+    font-size: 21px;
+    width: 130px;
+    padding: 15px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    margin: 10px;
+    color: white;
+}
+
+.actionBtn:active {
+    color: white;
+    border-radius: 5px;
+}

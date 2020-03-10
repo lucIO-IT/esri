@@ -1,0 +1,325 @@
+@import url('css/views.css');
+@import url('css/nav.css');
+@import url('css/loader.css');
+@import url('css/responsive.css');
+@import url('css/esri.css');
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 58px);
+}
+
+.appBody {
+    width: 100%;
+    height: 100%;
+    background: rgb(240,240,240);
+    display: flex;
+    justify-content: center;
+}
+
+.appContainer {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    background: rgb(240,240,240);
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.appUserContainer {
+   vertical-align: top;
+   margin: 0 auto;
+   display: inline-block;
+   padding: 10px;
+   width: 250px;
+}
+
+.appUserCard {
+    height: 100%;
+    width: 100%;
+}
+
+.appLogoContainer {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appLogo {
+    width: 65px;
+    height: 65px;
+    z-index: 0;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.appText {
+    max-width: 220px;
+}
+
+.appText * {
+    margin: 0;
+    font-size: 13.5px;
+    text-align: left;
+    padding: 5px;
+    color: rgb(98,98,98);
+}
+
+.appBar {
+    padding: 15px 0;
+    min-width: 200px;
+}
+
+.appModalBtn {
+
+}
+
+.appShadows {
+    -webkit-box-shadow: 0px 3px 4.5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 3px 4.5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 3px 4.5px 0px rgba(0,0,0,0.45);
+}
+
+.hidden {
+    display: none;
+}
+
+.appTitle {
+    display: block;
+    margin: 0;
+    font-weight: bolder;
+    line-height: 2.5;
+    color: rgb(50,50,50);
+}
+
+.appUserDetail {
+    cursor: pointer;
+}
+
+.userDetailHeader {
+    background: rgb(200,43,66);
+    color: white;
+}
+.floatContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.imageBkgWrapper {
+    width: 100%;
+    height: 100%;
+}
+.appBtn {
+    border-radius: 5px;
+    -webkit-border-radius: 2.5px;
+    -moz-border-radius: 2.5px;
+    color: rgb(200,43,66);
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+}
+.appBtn[data-icon='phone']::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: " \f095";
+  }
+
+.appBtn[data-icon='mail']::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: " \f0e0";
+  }
+
+.appBtn[data-icon='briefcase']::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: " \f0b1";
+  }
+
+.appBtn.colored {
+    background-color: rgb(200,43,66);
+    color: white;
+}
+
+.topRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    padding: 5px;
+    margin: 2.5px;
+    font-size: 12px;
+    color: rgb(98,98,98);
+}
+
+.iconWrapper {
+    padding: 0;
+    display: block;
+    font-size: 12px;
+    width: 100%;
+}
+
+.iconMarker {
+    display: inline-block;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.red {
+   color:rgb(200,43,66);
+   border-color:rgb(200,43,66);
+   background: transparent;
+   }
+
+.iconMarker::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: '\f3c5'; margin-right: 5px;
+}
+
+.appMenuWrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    animation-name: menu-move;
+    animation-duration: 0.4s;
+    position: relative;
+    background: white;
+}
+
+.appMenu {
+    color: rgb(50,50,50);
+    height: 100%;
+    position: relative;
+}
+
+.appMenu a, .appMenu a:active {
+    color: rgb(50,50,50);
+}
+.appMenu a:hover {
+    rgb(200,43,66)
+}
+
+@keyframes menu-move {
+   from {left: -100px; opacity: 0}
+   to {left: 0; opacity: 1}
+}
+
+.menuHeader {
+    border-bottom: 1.5px solid rgb(200,43,66);
+}
+
+.menuItem {
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.16s linear;
+    position: relative;
+}
+
+.menuItem:hover {
+    color: rgb(200,43,66);
+    background: rgba(255,93,116, 0.35)
+}
+
+.menuBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(50,50,50);
+    color: white;
+    width: 100%;
+}
+
+.menuBottom a {
+    color: rgb(200,43,66);
+}
+
+.flexTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuSocialWrapper {
+    padding: 0 10px;
+}
+
+.menuSocialWrapper a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -wenkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    color: rgb(200,43,66);
+    transition: background 0.16s linear;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuSocialWrapper a {
+    background: rgb(200,43,66);
+    color: white;
+}
+
+.tab {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.coloredTopBar {
+    background: #5d4037; /*rgb(200,43,66);*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 58px;
+}
+
+.rollWrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgb(250,250,250);
+}
+
+@keyframes top-move {
+   from {top: -100px; opacity: 0}
+   to {top: 0; opacity: 1}
+}
+
+.textTruncate {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.userData, .userInfo {
+    border: 1px dotted rgb(50,50,50);
+    width: 100%;
+    position: relative;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ArcGIS JavaScript Tutorials: Create a JavaScript starter app</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="https://js.arcgis.com/4.14/"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Roboto', sans-serif;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+	  }
+      html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .templateDescription {
+        color: red;
+      }
+      .map {
+        height: 90vh;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backgroundApp">
+        <div class="coloredTopBar"></div>
+        <div class="mainWrapper">
+          <nav class="appNav floatContainer">
+            <h2>
+            Arch Milan
+            </h2>
+            <a href="#map_app_arch" class="link">
+            App
+            </a>
+            <a href="#homepage" class="link">
+            Home
+            </a>
+            </nav>
+            <section class="floatContainer" style="height: 100%; margin-top: 58px; position: relative;">
+                 <div id="hometab" class="map viewBody viewTab"></div>
+                 <div id="maptab" class="viewTab"></div>
+                <div class="rollWrapper">
+                     <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="src/main.js" type="module"></script>
+  </body>
+</html>

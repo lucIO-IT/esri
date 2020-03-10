@@ -1,0 +1,75 @@
+.appNav {
+    background: #5d4037; /*rgb(200,43,66);*/
+    width: 100%;
+    max-width: 1050px;
+    float: none;
+    position: fixed;
+    top: 0;
+    height: 58px;
+}
+.appNav * {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+.appNav a.link {
+    float: right;
+    font-size: 18px;
+    padding-top: 15px;
+    text-decoration: none;
+}
+.appNav i {
+    font-size: 18px;
+}
+.searchBox {
+    width: 100%;
+    float: none;
+    height: 57.6px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: -100px;
+    padding: 10px;
+}
+.openSearchBox {
+    top: 0;
+    animation-name: top-move;
+    animation-duration: 0.4s;
+}
+.searchBox input, .textInput, .textArea {
+    text-align: left;
+    font-size: 13.5px;
+    color: rgb(50,50,50);
+    border-radius: 25px;
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    border: 0;
+    outline: none;
+}
+
+.textArea {
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow-y: auto;
+    word-wrap:break-word;
+}
+
+.searchBox button {
+    display: block;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background: rgb(200,43,66);
+    outline: none;
+}

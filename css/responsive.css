@@ -1,0 +1,48 @@
+.mainWrapper {
+    margin: auto;
+    height: 100vh;
+    width: 1050px;
+    overflow: hidden;
+}
+
+.desktopAside {
+    height: 100%;
+    margin: 0 30px;
+    float: left;
+}
+
+.desktopAside .appMenuWrapper {
+    background: transparent;
+}
+
+.desktopAside .appNav * {
+    visibility: hidden;
+}
+
+.desktopAside .menuBottom {
+    position: static;
+    background: transparent;
+    color: rgb(50,50,50);
+}
+
+.desktopAside .appMenuWrapper {
+    display: block;
+}
+
+@media only screen and (max-width: 768px){
+    .viewTab {
+        /*margin: 0;*/
+    }
+    .mainWrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    nav.appNav h2 {
+        max-width: 140px;
+        text-overflow: ellipsis; white-space: nowrap;
+      overflow: hidden;
+    }
+
+}
