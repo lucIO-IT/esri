@@ -1,5 +1,5 @@
 # ARCH Milan - Visualizzatore di siti museali a Milano
-<img src="https://drive.google.com/file/d/1GucSJ4D8_24H2xzVcDWRGkLxEmZzAVn2/view?usp=sharing"/>
+<img src="https://ibb.co/TbSKGF4"/>
 
 ARCH Milan è un esempio di applicazione JavaScript che richiama la piattaforma ArcGIS per la visualizzazione di siti archeologici nella città di Milano.
 
