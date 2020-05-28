@@ -1,5 +1,5 @@
 # ARCH Milan - Visualizzatore di siti museali a Milano
-![github-small]("https://github.com/lucIO-IT/esri/cover_image.png")
+![github-small]("https://github.com/lucIO-IT/esri/blob/master/cover_image.png")
 
 ARCH Milan è un esempio di applicazione JavaScript che richiama la piattaforma ArcGIS per la visualizzazione di siti archeologici nella città di Milano.
 
