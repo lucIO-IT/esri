@@ -1,8 +1,10 @@
 export class Router {
 
-    constructor(routes, home){
+    constructor(routes, home, target='body'){
         this.routes = routes;
         this.home = home;
+        this.target = target;
+        this.history = [];
         this.loadEvents();
     }
 
@@ -27,11 +29,12 @@ export class Router {
         //return route path, if path does not exist display 404
         try {
             this.routes[location.hash]();
+            this.history.push(location.hash);
         } catch(e) {
             var page404 = document.createElement('div');
             page404.classList.add('viewAlert');
             page404.innerHTML = '404: Page not found';
-            document.body.appendChild(page404);
+            document.querySelector(this.target).appendChild(page404);
         }
     }
 
